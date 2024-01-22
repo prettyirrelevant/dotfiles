@@ -6,6 +6,7 @@ extensions=(
     astro-build.astro-vscode
     batisteo.vscode-django
     bradlc.vscode-tailwindcss
+    castwide.solargraph
     Catppuccin.catppuccin-vsc
     charliermarsh.ruff
     christian-kohler.npm-intellisense
@@ -39,6 +40,7 @@ extensions=(
     move.move-analyzer
     ms-azuretools.vscode-docker
     ms-python.black-formatter
+    ms-python.debugpy
     ms-python.flake8
     ms-python.isort
     ms-python.python
@@ -58,6 +60,7 @@ extensions=(
     pmndrs.pmndrs
     Prisma.prisma
     puorc.awesome-vhdl
+    qwtel.sqlite-viewer
     raunofreiberg.vesper
     redhat.vscode-yaml
     ritwickdey.LiveServer
@@ -73,6 +76,7 @@ extensions=(
     wesbos.theme-cobalt2
     whizkydee.material-palenight-theme
     wholroyd.jinja
+    YoavBls.pretty-ts-errors
     yzhang.markdown-all-in-one
     zhuangtongfa.material-theme
     ziglang.vscode-zig
