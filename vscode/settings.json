@@ -5,11 +5,13 @@
     "editor.lineHeight": 16.5,
     "editor.fontLigatures": true,
     "editor.inlayHints.enabled": "on",
+    "editor.wordWrap": "on",
     "editor.formatOnSave": true,
     "editor.bracketPairColorization.enabled": true,
     "editor.guides.bracketPairs": "active",
     "editor.suggestSelection": "first",
     "editor.fontWeight": "400",
+    "editor.linkedEditing": true,
     "editor.cursorStyle": "line",
     "editor.cursorWidth": 3,
     "editor.cursorBlinking": "smooth",
@@ -19,13 +21,56 @@
     "editor.guides.highlightActiveBracketPair": true,
     "editor.snippetSuggestions": "top",
     "editor.inlineSuggest.enabled": true,
+    "editor.unicodeHighlight.nonBasicASCII": false,
     "editor.glyphMargin": true,
     "editor.minimap.renderCharacters": false,
-    "editor.minimap.scale": 1.5,
-    "window.commandCenter": false,
+    "editor.hideCursorInOverviewRuler": true,
+    "editor.minimap.autohide": true,
     "editor.scrollbar.verticalScrollbarSize": 1,
+    "editor.stickyScroll.enabled": true,
     "editor.scrollbar.horizontalScrollbarSize": 1,
+    "editor.tokenColorCustomizations": {
+        "textMateRules": [
+            // remove peppermint flavor
+            {
+                "name": "String, Symbols, Inherited Class",
+                "scope": [
+                    "string",
+                    "constant.other.symbol",
+                    "constant.other.key",
+                    "meta.group.braces.curly constant.other.object.key.js string.unquoted.label.js"
+                ],
+                "settings": {
+                    "foreground": "#A0A0A0"
+                }
+            },
+            {
+                "name": "CSS ID's",
+                "scope": [
+                    "source.sass keyword.control",
+                    "meta.attribute-selector.scss"
+                ],
+                "settings": {
+                    "foreground": "#ffffff"
+                }
+            },
+            {
+                "name": "Inserted",
+                "scope": [
+                    "markup.inserted"
+                ],
+                "settings": {
+                    "foreground": "#ffffff"
+                }
+            }
+        ]
+    },
+    // breadcrumbs
+    "breadcrumbs.enabled": false,
+    // window
+    "window.commandCenter": false,
     "window.titleBarStyle": "custom",
+    "window.zoomLevel": -1,
     "window.title": "${dirty}${activeEditorShort}${separator}${rootName}",
     // workbench
     "workbench.editor.enablePreview": false,
@@ -33,12 +78,17 @@
         "git-rebase-todo": "gitlens.rebase"
     },
     "workbench.colorCustomizations": {
-        "scrollbar.shadow": "#0000"
+        "editorGutter.addedBackground": "#A0A0A0",
+        "editorGutter.deletedBackground": "#A0A0A0",
+        "editorGutter.modifiedBackground": "#A0A0A0"
     },
     "workbench.colorTheme": "Vesper",
     "workbench.startupEditor": "none",
+    "workbench.editor.editorActionsLocation": "hidden",
     "workbench.iconTheme": "material-icon-theme",
     "workbench.sideBar.location": "right",
+    "workbench.layoutControl.enabled": false,
+    "workbench.statusBar.visible": true,
     // explorer
     "explorer.autoReveal": false,
     "explorer.excludeGitIgnore": true,
@@ -76,23 +126,25 @@
     "isort.importStrategy": "fromEnvironment",
     "black-formatter.importStrategy": "fromEnvironment",
     "[python]": {
-        "editor.formatOnType": true,
         "editor.formatOnSave": true,
         "editor.codeActionsOnSave": {
-            "source.organizeImports": "explicit"
+            "source.fixAll.ruff": "explicit",
+            "source.organizeImports.ruff": "never"
         },
-        "editor.defaultFormatter": "charliermarsh.ruff",
+        "editor.defaultFormatter": "ms-python.black-formatter"
     },
     "python.defaultInterpreterPath": "${workspaceFolder}/.venv/bin/python",
     // diff editor
     "diffEditor.ignoreTrimWhitespace": false,
     // go
     "go.toolsManagement.autoUpdate": true,
+    "go.lintTool": "golangci-lint",
+    "go.lintFlags": [
+        "--fast"
+    ],
     // rust
     "rust-analyzer.cargo.buildScripts.enable": true,
-    // github pull requests
-    "githubPullRequests.pullBranch": "never",
-    "githubPullRequests.terminalLinksHandler": "github",
+    // github pull reques
     // solidity
     "solidity.telemetry": true,
     "[jsonc]": {
@@ -106,8 +158,17 @@
     },
     // apc
     "apc.font.family": "Dank Mono",
-    // gitignore
+    // git
+    "gitlens.mode.active": "zen",
+    "githubPullRequests.pullBranch": "never",
     "gitignore.cacheExpirationInterval": 604800,
-    "window.zoomLevel": -1,
-    "workbench.layoutControl.enabled": false,
+    "githubPullRequests.terminalLinksHandler": "github",
+    "[typescriptreact]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[typescript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    // Dart & Flutter
+    "dart.flutterSdkPath": "~/Library/flutter"
 }
