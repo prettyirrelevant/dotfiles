@@ -3,38 +3,39 @@
 extensions=(
     aaron-bond.better-comments
     ahmadawais.shades-of-purple
+    ambar.bundle-size
     astro-build.astro-vscode
     batisteo.vscode-django
     bradlc.vscode-tailwindcss
     castwide.solargraph
-    Catppuccin.catppuccin-vsc
+    catppuccin.catppuccin-vsc
     charliermarsh.ruff
     christian-kohler.npm-intellisense
     christian-kohler.path-intellisense
     codezombiech.gitignore
     damirka.move-syntax
-    Dart-Code.dart-code
-    Dart-Code.flutter
+    dart-code.dart-code
+    dart-code.flutter
+    davidanson.vscode-markdownlint
     dbaeumer.vscode-eslint
-    donjayamanne.githistory
     donjayamanne.python-environment-manager
     donjayamanne.python-extension-pack
     drcika.apc-extension
     eamodio.gitlens
     ecmel.vscode-html-css
-    EditorConfig.EditorConfig
-    EliverLara.andromeda
-    Equinusocio.vsc-material-theme
-    equinusocio.vsc-material-theme-icons
+    editorconfig.editorconfig
+    eliverlara.andromeda
     esbenp.prettier-vscode
     fwcd.kotlin
+    github.copilot
+    github.copilot-chat
     github.vscode-github-actions
-    GitHub.vscode-pull-request-github
+    github.vscode-pull-request-github
     golang.go
-    Gruntfuggly.todo-tree
-    JakeBecker.elixir-ls
+    gruntfuggly.todo-tree
+    jakebecker.elixir-ls
     jdinhlife.gruvbox
-    KevinRose.vsc-python-indent
+    kevinrose.vsc-python-indent
     mechatroner.rainbow-csv
     mikestead.dotenv
     move.move-analyzer
@@ -54,29 +55,31 @@ extensions=(
     ms-vsliveshare.vsliveshare
     msjsdiag.vscode-react-native
     njpwerner.autodocstring
-    NomicFoundation.hardhat-solidity
+    nomicfoundation.hardhat-solidity
     patbenatar.advanced-new-file
-    PKief.material-icon-theme
     pmndrs.pmndrs
-    Prisma.prisma
+    prisma.prisma
     puorc.awesome-vhdl
     qwtel.sqlite-viewer
     raunofreiberg.vesper
     redhat.vscode-yaml
-    ritwickdey.LiveServer
-    RobbOwen.synthwave-vscode
+    ritwickdey.liveserver
+    robbowen.synthwave-vscode
     rust-lang.rust-analyzer
+    tailscale.vscode-tailscale
     tamasfe.even-better-toml
     tintinweb.vscode-vyper
     usernamehw.errorlens
-    VisualStudioExptTeam.intellicode-api-usage-examples
-    VisualStudioExptTeam.vscodeintellicode
-    Vue.volar
-    WakaTime.vscode-wakatime
+    valentjn.vscode-ltex
+    visualstudioexptteam.intellicode-api-usage-examples
+    visualstudioexptteam.vscodeintellicode
+    vscode-icons-team.vscode-icons
+    vue.volar
+    wakatime.vscode-wakatime
     wesbos.theme-cobalt2
     whizkydee.material-palenight-theme
     wholroyd.jinja
-    YoavBls.pretty-ts-errors
+    yoavbls.pretty-ts-errors
     yzhang.markdown-all-in-one
     zhuangtongfa.material-theme
     ziglang.vscode-zig

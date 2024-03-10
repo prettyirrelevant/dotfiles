@@ -2,7 +2,7 @@
     // editor
     "editor.fontFamily": "Dank Mono",
     "editor.fontSize": 13,
-    "editor.lineHeight": 16.5,
+    "editor.lineHeight": 20,
     "editor.fontLigatures": true,
     "editor.inlayHints.enabled": "on",
     "editor.wordWrap": "on",
@@ -70,7 +70,6 @@
     // window
     "window.commandCenter": false,
     "window.titleBarStyle": "custom",
-    "window.zoomLevel": -1,
     "window.title": "${dirty}${activeEditorShort}${separator}${rootName}",
     // workbench
     "workbench.editor.enablePreview": false,
@@ -85,7 +84,6 @@
     "workbench.colorTheme": "Vesper",
     "workbench.startupEditor": "none",
     "workbench.editor.editorActionsLocation": "hidden",
-    "workbench.iconTheme": "material-icon-theme",
     "workbench.sideBar.location": "right",
     "workbench.layoutControl.enabled": false,
     "workbench.statusBar.visible": true,
@@ -112,7 +110,7 @@
     "terminal.integrated.tabs.enabled": true,
     "terminal.integrated.defaultProfile.osx": "zsh",
     "terminal.integrated.shellIntegration.enabled": true,
-    "terminal.integrated.fontFamily": "DankMono Nerd Font",
+    "terminal.integrated.fontFamily": "Geist Mono",
     // python
     "isort.args": [
         "--profile",
@@ -170,5 +168,12 @@
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
     // Dart & Flutter
-    "dart.flutterSdkPath": "~/Library/flutter"
+    "dart.flutterSdkPath": "~/Library/flutter",
+    "window.zoomLevel": -1,
+    "[html]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[scss]": {
+        "editor.defaultFormatter": "vscode.css-language-features"
+    }
 }
