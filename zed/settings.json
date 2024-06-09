@@ -1,0 +1,45 @@
+// Zed settings
+//
+// For information on how to configure Zed, see the Zed
+// documentation: https://zed.dev/docs/configuring-zed
+//
+// To see all of Zed's default settings without changing your
+// custom settings, run the `open default settings` command
+// from the command palette or from `Zed` application menu.
+{
+  "theme": "Vesper",
+  "ui_font_size": 12,
+  "buffer_font_size": 11,
+  "ui_font_family": "Cascadia Code",
+  "buffer_font_family": "Cascadia Code",
+  "autosave": "on_focus_change",
+  "active_pane_magnification": 2.0,
+  "cursor_blink": true,
+  "show_inline_completions": false,
+  "tab_bar": {
+    "show_nav_history_buttons": false
+  },
+  "show_whitespaces": "all",
+  "tabs": { "close_position": "right", "git_status": true },
+  "toolbar": { "breadcrumbs": true, "quick_actions": false },
+  "scrollbar": {
+    "show": "never",
+    "cursors": false,
+    "git_diff": true,
+    "search_results": false,
+    "selected_symbol": false,
+    "diagnostics": false
+  },
+  "base_keymap": "VSCode",
+  "buffer_line_height": "comfortable",
+  "project_panel": {
+    "button": true,
+    "dock": "left",
+    "git_status": true
+  },
+  "terminal": {
+    "font_size": 10,
+    "font_family": "JetBrainsMono Nerd Font",
+    "working_directory": "current_project_directory"
+  }
+}
