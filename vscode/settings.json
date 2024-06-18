@@ -1,5 +1,8 @@
 {
     // editor
+    "editor.scrollbar.vertical": "auto",
+    "editor.minimap.enabled": false,
+    "editor.scrollbar.horizontal": "auto",
     "editor.fontFamily": "Dank Mono",
     "editor.fontSize": 13,
     "editor.lineHeight": 20,
@@ -66,27 +69,32 @@
         ]
     },
     // breadcrumbs
-    "breadcrumbs.enabled": false,
+    "breadcrumbs.enabled": true,
     // window
+    "window.zoomLevel": -1,
     "window.commandCenter": false,
     "window.titleBarStyle": "custom",
     "window.title": "${dirty}${activeEditorShort}${separator}${rootName}",
     // workbench
+    "workbench.iconTheme": "sakai",
+    "workbench.colorTheme": "Vesper",
+    "workbench.startupEditor": "none",
     "workbench.editor.enablePreview": false,
+    "workbench.settings.editor": "json",
     "workbench.editorAssociations": {
-        "git-rebase-todo": "gitlens.rebase"
+        "git-rebase-todo": "gitlens.rebase",
+        "*.pdf": "latex-workshop-pdf-hook"
     },
     "workbench.colorCustomizations": {
         "editorGutter.addedBackground": "#A0A0A0",
         "editorGutter.deletedBackground": "#A0A0A0",
         "editorGutter.modifiedBackground": "#A0A0A0"
     },
-    "workbench.colorTheme": "Vesper",
-    "workbench.startupEditor": "none",
-    "workbench.editor.editorActionsLocation": "hidden",
+    "workbench.statusBar.visible": false,
     "workbench.sideBar.location": "right",
+    "workbench.activityBar.location": "hidden",
     "workbench.layoutControl.enabled": false,
-    "workbench.statusBar.visible": true,
+    "workbench.editor.editorActionsLocation": "titleBar",
     // explorer
     "explorer.autoReveal": false,
     "explorer.excludeGitIgnore": true,
@@ -108,9 +116,9 @@
     // terminal
     "terminal.integrated.fontSize": 12,
     "terminal.integrated.tabs.enabled": true,
-    "terminal.integrated.defaultProfile.osx": "zsh",
+    "terminal.integrated.fontFamily": "JetBrainsMono Nerd Font",
+    "terminal.integrated.defaultProfile.osx": "fish",
     "terminal.integrated.shellIntegration.enabled": true,
-    "terminal.integrated.fontFamily": "Geist Mono",
     // python
     "isort.args": [
         "--profile",
@@ -124,11 +132,6 @@
     "isort.importStrategy": "fromEnvironment",
     "black-formatter.importStrategy": "fromEnvironment",
     "[python]": {
-        "editor.formatOnSave": true,
-        "editor.codeActionsOnSave": {
-            "source.fixAll.ruff": "explicit",
-            "source.organizeImports.ruff": "never"
-        },
         "editor.defaultFormatter": "ms-python.black-formatter"
     },
     "python.defaultInterpreterPath": "${workspaceFolder}/.venv/bin/python",
@@ -142,9 +145,9 @@
     ],
     // rust
     "rust-analyzer.cargo.buildScripts.enable": true,
-    // github pull reques
     // solidity
     "solidity.telemetry": true,
+    // language specific config
     "[jsonc]": {
         "editor.defaultFormatter": "vscode.json-language-features"
     },
@@ -154,26 +157,61 @@
     "[json]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
-    // apc
-    "apc.font.family": "Dank Mono",
-    // git
-    "gitlens.mode.active": "zen",
-    "githubPullRequests.pullBranch": "never",
-    "gitignore.cacheExpirationInterval": 604800,
-    "githubPullRequests.terminalLinksHandler": "github",
+    "[html]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[scss]": {
+        "editor.defaultFormatter": "vscode.css-language-features"
+    },
     "[typescriptreact]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
     "[typescript]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
+    "[markdown]": {
+        "files.trimTrailingWhitespace": false
+    },
+    "[go]": {
+        "editor.insertSpaces": false,
+        "editor.formatOnSave": true,
+        "editor.codeActionsOnSave": {
+            "source.organizeImports": "always"
+        }
+    },
+    "[prisma]": {
+        "editor.formatOnSave": true
+    },
+    // apc
+    "apc.font.family": "Dank Mono",
+    // "apc.activityBar": {
+    //     "position": "bottom",
+    //     "hideSettings": true,
+    //     "size": 28
+    // },
+    "apc.statusBar": {
+        "position": "editor-bottom",
+        "height": 28,
+        "fontSize": 12
+    },
+    // git
+    "gitlens.mode.active": "zen",
+    "git.openRepositoryInParentFolders": "always",
+    "gitignore.cacheExpirationInterval": 604800,
     // Dart & Flutter
     "dart.flutterSdkPath": "~/Library/flutter",
-    "window.zoomLevel": -1,
-    "[html]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    // github(and copilot)
+    "githubPullRequests.terminalLinksHandler": "github",
+    "github.copilot.editor.enableCodeActions": false,
+    "githubPullRequests.pullBranch": "never",
+    "github.copilot.editor.enableAutoCompletions": true,
+    "github.copilot.enable": {
+        "*": false,
+        "plaintext": false,
+        "markdown": false,
+        "scminput": false
     },
-    "[scss]": {
-        "editor.defaultFormatter": "vscode.css-language-features"
-    }
+    "redhat.telemetry.enabled": false,
+    "prettier.requireConfig": true,
+    "sakai-icons.hidesExplorerArrows": true
 }

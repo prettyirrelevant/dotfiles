@@ -3,12 +3,15 @@
 extensions=(
     aaron-bond.better-comments
     ahmadawais.shades-of-purple
-    ambar.bundle-size
+    artlaman.chalice-icon-theme
     astro-build.astro-vscode
     batisteo.vscode-django
+    be5invis.vscode-icontheme-nomo-dark
+    bmalehorn.vscode-fish
     bradlc.vscode-tailwindcss
     castwide.solargraph
     catppuccin.catppuccin-vsc
+    chadalen.vscode-jetbrains-icon-theme
     charliermarsh.ruff
     christian-kohler.npm-intellisense
     christian-kohler.path-intellisense
@@ -18,6 +21,7 @@ extensions=(
     dart-code.flutter
     davidanson.vscode-markdownlint
     dbaeumer.vscode-eslint
+    denoland.vscode-deno
     donjayamanne.python-environment-manager
     donjayamanne.python-extension-pack
     drcika.apc-extension
@@ -25,15 +29,22 @@ extensions=(
     ecmel.vscode-html-css
     editorconfig.editorconfig
     eliverlara.andromeda
+    emmanuelbeziat.vscode-great-icons
+    equinusocio.moxer-icons
+    equinusocio.vsc-material-theme-icons
     esbenp.prettier-vscode
     fwcd.kotlin
     github.copilot
     github.copilot-chat
     github.vscode-github-actions
     github.vscode-pull-request-github
+    gleam.gleam
     golang.go
     gruntfuggly.todo-tree
+    helgardrichard.helium-icon-theme
     jakebecker.elixir-ls
+    james-yu.latex-workshop
+    jamesmaj.easy-icons
     jdinhlife.gruvbox
     kevinrose.vsc-python-indent
     mechatroner.rainbow-csv
@@ -52,11 +63,14 @@ extensions=(
     ms-toolsai.vscode-jupyter-cell-tags
     ms-toolsai.vscode-jupyter-slideshow
     ms-vscode-remote.remote-containers
+    ms-vscode.powershell
     ms-vsliveshare.vsliveshare
     msjsdiag.vscode-react-native
     njpwerner.autodocstring
     nomicfoundation.hardhat-solidity
+    oven.bun-vscode
     patbenatar.advanced-new-file
+    pkief.material-icon-theme
     pmndrs.pmndrs
     prisma.prisma
     puorc.awesome-vhdl
@@ -66,11 +80,12 @@ extensions=(
     ritwickdey.liveserver
     robbowen.synthwave-vscode
     rust-lang.rust-analyzer
+    sakai.sakai-icons
+    sumneko.lua
     tailscale.vscode-tailscale
     tamasfe.even-better-toml
     tintinweb.vscode-vyper
     usernamehw.errorlens
-    valentjn.vscode-ltex
     visualstudioexptteam.intellicode-api-usage-examples
     visualstudioexptteam.vscodeintellicode
     vscode-icons-team.vscode-icons
@@ -80,7 +95,6 @@ extensions=(
     whizkydee.material-palenight-theme
     wholroyd.jinja
     yoavbls.pretty-ts-errors
-    yzhang.markdown-all-in-one
     zhuangtongfa.material-theme
     ziglang.vscode-zig
     ziyasal.vscode-open-in-github
