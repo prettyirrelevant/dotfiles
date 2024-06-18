@@ -1,17 +1,23 @@
 {
-    // editor
+    // Editor settings
     "editor.scrollbar.vertical": "auto",
-    "editor.minimap.enabled": false,
     "editor.scrollbar.horizontal": "auto",
+    "editor.scrollbar.verticalScrollbarSize": 1,
+    "editor.scrollbar.horizontalScrollbarSize": 1,
+    "editor.minimap.enabled": false,
+    "editor.minimap.renderCharacters": false,
+    "editor.minimap.autohide": true,
     "editor.fontFamily": "Dank Mono",
     "editor.fontSize": 13,
     "editor.lineHeight": 20,
     "editor.fontLigatures": true,
-    "editor.inlayHints.enabled": "on",
     "editor.wordWrap": "on",
     "editor.formatOnSave": true,
     "editor.bracketPairColorization.enabled": true,
     "editor.guides.bracketPairs": "active",
+    "editor.guides.indentation": true,
+    "editor.guides.highlightActiveIndentation": true,
+    "editor.guides.highlightActiveBracketPair": true,
     "editor.suggestSelection": "first",
     "editor.fontWeight": "400",
     "editor.linkedEditing": true,
@@ -19,22 +25,14 @@
     "editor.cursorWidth": 3,
     "editor.cursorBlinking": "smooth",
     "editor.cursorSmoothCaretAnimation": "on",
-    "editor.guides.indentation": true,
-    "editor.guides.highlightActiveIndentation": true,
-    "editor.guides.highlightActiveBracketPair": true,
     "editor.snippetSuggestions": "top",
     "editor.inlineSuggest.enabled": true,
     "editor.unicodeHighlight.nonBasicASCII": false,
     "editor.glyphMargin": true,
-    "editor.minimap.renderCharacters": false,
     "editor.hideCursorInOverviewRuler": true,
-    "editor.minimap.autohide": true,
-    "editor.scrollbar.verticalScrollbarSize": 1,
     "editor.stickyScroll.enabled": true,
-    "editor.scrollbar.horizontalScrollbarSize": 1,
     "editor.tokenColorCustomizations": {
         "textMateRules": [
-            // remove peppermint flavor
             {
                 "name": "String, Symbols, Inherited Class",
                 "scope": [
@@ -68,14 +66,17 @@
             }
         ]
     },
-    // breadcrumbs
+
+    // Breadcrumbs settings
     "breadcrumbs.enabled": true,
-    // window
+
+    // Window settings
     "window.zoomLevel": -1,
     "window.commandCenter": false,
     "window.titleBarStyle": "custom",
     "window.title": "${dirty}${activeEditorShort}${separator}${rootName}",
-    // workbench
+
+    // Workbench settings
     "workbench.iconTheme": "sakai",
     "workbench.colorTheme": "Vesper",
     "workbench.startupEditor": "none",
@@ -95,11 +96,13 @@
     "workbench.activityBar.location": "hidden",
     "workbench.layoutControl.enabled": false,
     "workbench.editor.editorActionsLocation": "titleBar",
-    // explorer
+
+    // Explorer settings
     "explorer.autoReveal": false,
     "explorer.excludeGitIgnore": true,
     "explorer.confirmDragAndDrop": false,
-    // files
+
+    // Files settings
     "files.trimTrailingWhitespace": true,
     "files.insertFinalNewline": true,
     "files.trimFinalNewlines": true,
@@ -113,13 +116,15 @@
         "**/__pycache__/**": true,
         ".venv/": true
     },
-    // terminal
+
+    // Terminal settings
     "terminal.integrated.fontSize": 12,
     "terminal.integrated.tabs.enabled": true,
     "terminal.integrated.fontFamily": "JetBrainsMono Nerd Font",
     "terminal.integrated.defaultProfile.osx": "fish",
     "terminal.integrated.shellIntegration.enabled": true,
-    // python
+
+    // Python settings
     "isort.args": [
         "--profile",
         "black"
@@ -135,19 +140,24 @@
         "editor.defaultFormatter": "ms-python.black-formatter"
     },
     "python.defaultInterpreterPath": "${workspaceFolder}/.venv/bin/python",
-    // diff editor
+
+    // Diff editor settings
     "diffEditor.ignoreTrimWhitespace": false,
-    // go
+
+    // Go settings
     "go.toolsManagement.autoUpdate": true,
     "go.lintTool": "golangci-lint",
     "go.lintFlags": [
         "--fast"
     ],
-    // rust
+
+    // Rust settings
     "rust-analyzer.cargo.buildScripts.enable": true,
-    // solidity
+
+    // Solidity settings
     "solidity.telemetry": true,
-    // language specific config
+
+    // Language specific settings
     "[jsonc]": {
         "editor.defaultFormatter": "vscode.json-language-features"
     },
@@ -182,25 +192,24 @@
     "[prisma]": {
         "editor.formatOnSave": true
     },
-    // apc
+
+    // APC settings
     "apc.font.family": "Dank Mono",
-    // "apc.activityBar": {
-    //     "position": "bottom",
-    //     "hideSettings": true,
-    //     "size": 28
-    // },
     "apc.statusBar": {
         "position": "editor-bottom",
         "height": 28,
         "fontSize": 12
     },
-    // git
+
+    // Git settings
     "gitlens.mode.active": "zen",
     "git.openRepositoryInParentFolders": "always",
     "gitignore.cacheExpirationInterval": 604800,
-    // Dart & Flutter
+
+    // Dart & Flutter settings
     "dart.flutterSdkPath": "~/Library/flutter",
-    // github(and copilot)
+
+    // GitHub and Copilot settings
     "githubPullRequests.terminalLinksHandler": "github",
     "github.copilot.editor.enableCodeActions": false,
     "githubPullRequests.pullBranch": "never",
@@ -211,6 +220,8 @@
         "markdown": false,
         "scminput": false
     },
+
+    // Other settings
     "redhat.telemetry.enabled": false,
     "prettier.requireConfig": true,
     "sakai-icons.hidesExplorerArrows": true
